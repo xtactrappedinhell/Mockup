@@ -10,12 +10,10 @@
 
 body{
     width: 100%;
-    height: 100vh;
     overflow-x: hidden;
     background-color: black;
     color: white;
 }
-
 header{
     margin-top: 20px;
     position: fixed;
@@ -30,25 +28,21 @@ header{
     align-items: center;
     z-index: 100;
 }
-
 .logo{
     font-size: 1rem;
     color: white;
     font-weight: 800;
     cursor: pointer;
 }
-
 nav a{
     font-size: 0.6rem;
     color: grey;
     margin-left: 4rem;
     font-weight: 500;
 }
-
 nav a:hover, nav a.active{
     color: white;
 }
-
 .title{
     padding: 5rem 9% 5rem;
     display: flex;
@@ -56,19 +50,18 @@ nav a:hover, nav a.active{
     align-items: center;
     font-size: 10rem;
 }
-
 .home-img{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+    border-radius: 50%;
 }
-
 .home-img img{
     position: relative;
     width: 20vw;
+    border-radius: 50%;
 }
-
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -78,20 +71,98 @@ nav a:hover, nav a.active{
     font-weight: 600;
     background-color: green;
 }
-
 .btn:hover{
     background-color: greenyellow;
     color: black;
 }
-
+.label-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
 .home-labels{
-    justify-content: space-between;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2.8rem;
     border-radius: 4rem;
     font-size: 1rem;
-    color: grey;
+    color: white;
+    font-weight: 600;
+    background-color: gray;
+}
+.home-txt{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: gray;
 }
 
-.home-txt{
+.review-txt{
+    display: flex;
     justify-content: center;
-    color: grey;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.review-img img{
+    justify-content: center;
+    width: 32vw;
+}
+
+
+.sale-txt{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.sale-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+}
+.sale-img img{
+    position: relative;
+    justify-content: center;
+    width: 32vw;
+}
+.sale-btn{
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: green;
+    border-radius: 1rem;
+    padding: 20px 20px;
+}
+
+
+.dropdown button{
+    justify-content: center;
+    background-color: gray;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 100px;
+}
+.dropdown:hover .content{
+    display: block;
+    border-radius: 1rem;
 }
