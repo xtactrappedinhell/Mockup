@@ -42,11 +42,11 @@ nav a:hover, nav a.active{
     color: white;
 }
 .title{
-    padding: 5rem 9% 5rem;
+    padding-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10rem;
+    font-size: 15rem;
 }
 .home-img{
     display: flex;
@@ -62,9 +62,10 @@ nav a:hover, nav a.active{
 }
 .btn{
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 50px 20px;
     border-radius: 4rem;
-    font-size: 1rem;
+    font-size: 2rem;
+    text-align: center;
     color: white;
     font-weight: 600;
     background-color: green;
@@ -77,29 +78,45 @@ nav a:hover, nav a.active{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px auto;
+    margin: 10px auto;
+    gap: 10px;
+    width: 90%;
+}
+.home-labels {
+    flex: 1;
+    max-width: 33%;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    padding: 1rem;
+    border-radius: 4rem;
+    background-color: rgb(53, 53, 53);
+    overflow: hidden;
 }
 .home-labels a{
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 2.8rem;
+    text-align: center;
+    padding: 1rem 2rem;
     border-radius: 4rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    color: lightgrey;
-    background-color: gray;
-    cursor: default;
+    color: lightgray;
+    background-color: rgb(53, 53, 53);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    white-space: normal;
 }
 .home-labels .active{
     color: white;
-    cursor: pointer;
 }
 .home-txt{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    padding: 4rem;
     font-size: 1.5rem;
     color: gray;
 }
@@ -109,8 +126,8 @@ nav a:hover, nav a.active{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
     font-size: 1.5rem;
 }
 .review-img{
@@ -123,14 +140,18 @@ nav a:hover, nav a.active{
     position: relative;
     justify-content: center;
     width: 32vw;
+    border-radius: 8px;
+}
+.review-img .opacity img{
+    opacity: 50%;
 }
 
 
 .sale-txt{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
     font-size: 1.5rem;
 }
 .sale-img{
@@ -143,93 +164,137 @@ nav a:hover, nav a.active{
     position: relative;
     justify-content: center;
     width: 32vw;
+    border-radius: 8px;
 }
 .sale-btn{
     justify-content: center;
     align-items: center;
-    gap: 8rem;
+    margin: 10px;
+    font-size: 1.5rem;
     color: white;
-    background-color: gray;
+    background-color: rgb(53, 53, 53);
     border-radius: 1rem;
     padding: 20px 20px;
 }
 .sale-btn:hover{
-    color: black;
-    background-color: white;
+    background-color: gray;
 }
+
 
 .faq-txt{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    font-size: 1.5rem;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
 }
 .faq-menu{
     display: flex;
-    justify-content: center;
-}
-.faq-menu button{
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
-    width: 500px;
-    background-color: gray;
+    position: relative;
+}
+.faq-btn{
+    width: 70%;
     color: white;
+    background-color: rgb(53, 53, 53);
     padding: 10px 15px;
     border: none;
     border-radius: 1rem;
     cursor: pointer;
-}
-.dropdown li{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
+    font-size: 1.5rem;
+    text-align: left;
 }
 .dropdown{
     display: none;
     position: absolute;
-    justify-content: center;
-    background-color: gray;
-    min-width: 100px;
+    top: 100%;
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    border-radius: 1rem;
+    z-index: 100;
+}
+.dropdown ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .dropdown li{
     color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
 }
 .faq-menu:hover .dropdown{
     display: block;
-    border-radius: 1rem;
+    width: 70%;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.faq-menu:hover .faq-btn{
+    background-color: gray;
 }
 
+
+.contact
+{
+    padding: 40px 10%;
+    color: white;
+}
 .contact-txt{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
     font-size: 1.5rem;
+    color: white;
+}
+.contact-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem   ;
 }
 .contact-img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
 }
 .contact-img img{
-    position: relative;
+    max-width: 100%;
+    border-radius: 8px;
+}
+.contact-details{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 32vw;
+}
+.contact-details{
+    font-size: 1.5rem;
+    color: white;
+}
+.contact-details p{
+    font-size: 1rem;
+    margin-top: 20px;
+    color: lightgray;
 }
 .contact-btn{
+    margin-top: 5px;
     justify-content: center;
     align-items: center;
     gap: 8rem;
     color: white;
-    background-color: gray;
+    background-color: rgb(53, 53, 53);
     border-radius: 1rem;
     padding: 20px 20px;
 }
 .contact-btn:hover{
-    color: black;
-    background-color: white;
+    background-color: gray;
 }
+
 
 footer{
     margin-top: 20px;
@@ -243,13 +308,6 @@ footer{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-}
-.categories a {
-    font-size: 1rem;
-    color: white;
-    margin-left: 4rem;
-    font-weight: 500;
-    cursor: default;
 }
 .footer-nav{
     color: white;
