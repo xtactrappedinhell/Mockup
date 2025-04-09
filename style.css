@@ -88,8 +88,13 @@ nav a:hover, nav a.active{
     border-radius: 4rem;
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: lightgrey;
     background-color: gray;
+    cursor: default;
+}
+.home-labels .active{
+    color: white;
+    cursor: pointer;
 }
 .home-txt{
     display: flex;
