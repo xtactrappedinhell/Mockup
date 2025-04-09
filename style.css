@@ -15,27 +15,25 @@ body{
     color: white;
 }
 header{
-    margin-top: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 .logo{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     font-weight: 800;
     cursor: pointer;
 }
 nav a{
-    font-size: 0.6rem;
+    font-size: 1rem;
     color: grey;
     margin-left: 4rem;
     font-weight: 500;
@@ -81,7 +79,7 @@ nav a:hover, nav a.active{
     align-items: center;
     margin: 40px auto;
 }
-.home-labels{
+.home-labels a{
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -89,16 +87,18 @@ nav a:hover, nav a.active{
     padding: 1rem 2.8rem;
     border-radius: 4rem;
     font-size: 1rem;
-    color: white;
     font-weight: 600;
+    color: white;
     background-color: gray;
 }
 .home-txt{
     display: flex;
     justify-content: center;
     margin: 20px;
+    font-size: 1.5rem;
     color: gray;
 }
+
 
 .review-txt{
     display: flex;
@@ -106,8 +106,16 @@ nav a:hover, nav a.active{
     align-items: center;
     margin-top: 40px;
     margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.review-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 .review-img img{
+    position: relative;
     justify-content: center;
     width: 32vw;
 }
@@ -118,13 +126,13 @@ nav a:hover, nav a.active{
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 .sale-img{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
-    border-radius: 50%;
 }
 .sale-img img{
     position: relative;
@@ -135,14 +143,29 @@ nav a:hover, nav a.active{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: green;
+    color: white;
+    background-color: gray;
     border-radius: 1rem;
     padding: 20px 20px;
 }
+.sale-btn:hover{
+    color: black;
+    background-color: white;
+}
 
-
-.dropdown button{
+.faq-txt{
+    display: flex;
     justify-content: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+.faq-menu{
+    display: flex;
+    justify-content: center;
+}
+.faq-menu button{
+    margin-top: 20px;
+    width: 500px;
     background-color: gray;
     color: white;
     padding: 10px 15px;
@@ -150,19 +173,82 @@ nav a:hover, nav a.active{
     border-radius: 1rem;
     cursor: pointer;
 }
-.dropdown a{
+.dropdown li{
     display: block;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
 }
-.dropdown .content{
+.dropdown{
     display: none;
     position: absolute;
+    justify-content: center;
     background-color: gray;
     min-width: 100px;
 }
-.dropdown:hover .content{
+.dropdown li{
+    color: white;
+}
+.faq-menu:hover .dropdown{
     display: block;
     border-radius: 1rem;
+}
+
+.contact-txt{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.contact-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.contact-img img{
+    position: relative;
+    justify-content: center;
+    width: 32vw;
+}
+.contact-btn{
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    color: white;
+    background-color: gray;
+    border-radius: 1rem;
+    padding: 20px 20px;
+}
+.contact-btn:hover{
+    color: black;
+    background-color: white;
+}
+
+footer{
+    margin-top: 20px;
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.categories a {
+    font-size: 1rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    cursor: default;
+}
+.footer-nav{
+    color: white;
+}
+.footer-nav:hover{
+    color: black;
 }
